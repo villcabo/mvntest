@@ -1,0 +1,26 @@
+package io.github.villcab.mvntest.date;
+
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class StartAndEndDateFromDate {
+
+    private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+
+    public static void main(String[] args) {
+        LocalDate currentDate = LocalDate.now();
+//        LocalDate currentDate = LocalDate.of(2019, 11, 1);
+
+        LocalDate start = currentDate.withDayOfMonth(1);
+        LocalDate end = currentDate.withDayOfMonth(currentDate.lengthOfMonth());
+
+        ZonedDateTime startDate = start.atStartOfDay(ZoneId.systemDefault());
+        ZonedDateTime endDate = end.atStartOfDay(ZoneId.systemDefault()).withHour(23).withMinute(59).withSecond(59);
+
+        System.out.println("StarDate: " + startDate.format(DATE_TIME_FORMATTER));
+        System.out.println("EndDate:  " + endDate.format(DATE_TIME_FORMATTER));
+
+    }
+}
