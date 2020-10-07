@@ -10,15 +10,23 @@ public class NumberMain {
 //        BigDecimal totalPages = new BigDecimal(902610).divide(new BigDecimal(10000), RoundingMode.UP);
 //        System.out.println(totalPages);
 
-//        int aa = (int) Math.round((double) 100 / 15);
+//        int aa = (int) Math.round((double) 100 / 300000);
 //        System.out.println(aa);
 
-//        int r = new BigDecimal(100 / 15).setScale(2, RoundingMode.HALF_UP).intValue();
+        BigDecimal a1 = new BigDecimal(300000);
+        BigDecimal a2 = new BigDecimal(300000);
+
+
+        BigDecimal a  = a1.divide(a2, 0, RoundingMode.UP);
+        System.out.println(a);
+
+        BigDecimal b = a.setScale(0, RoundingMode.UP);
+        System.out.println(b);
+
 //        System.out.println(new BigDecimal(100 / 15).setScale(2, RoundingMode.HALF_UP));
 //        System.out.println(r);
 
 //        System.out.println(Long.MIN_VALUE);
-
-        System.out.println(new BigDecimal(21234556384577636742.16));
+//        System.out.println(new BigDecimal(21234556384577636742.16));
     }
 }

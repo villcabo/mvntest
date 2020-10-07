@@ -19,8 +19,10 @@ public class StartAndEndDateFromDate {
         ZonedDateTime startDate = start.atStartOfDay(ZoneId.systemDefault());
         ZonedDateTime endDate = end.atStartOfDay(ZoneId.systemDefault()).withHour(23).withMinute(59).withSecond(59);
 
-        System.out.println("StarDate: " + startDate.format(DATE_TIME_FORMATTER));
-        System.out.println("EndDate:  " + endDate.format(DATE_TIME_FORMATTER));
+//        System.out.println("StarDate: " + startDate.format(DATE_TIME_FORMATTER));
+//        System.out.println("EndDate:  " + endDate.format(DATE_TIME_FORMATTER));
+
+        System.out.println(LocalDate.now().minusDays(1).atStartOfDay(ZoneId.systemDefault()).format(DATE_TIME_FORMATTER));
 
     }
 }
