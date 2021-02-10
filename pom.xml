@@ -18,10 +18,10 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <jersey2.version>2.19</jersey2.version>
         <bouncycastle.version>1.59</bouncycastle.version>
+        <lombok.version>1.18.12</lombok.version>
     </properties>
 
     <dependencies>
-        <!-- Jersey 2.19 -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet</artifactId>
@@ -82,7 +82,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
