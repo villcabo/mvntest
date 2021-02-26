@@ -19,6 +19,7 @@
         <jersey2.version>2.19</jersey2.version>
         <bouncycastle.version>1.59</bouncycastle.version>
         <lombok.version>1.18.12</lombok.version>
+        <log4j.version>2.12.1</log4j.version>
     </properties>
 
     <dependencies>
@@ -77,6 +78,17 @@
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>${bouncycastle.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
 
         <dependency>
