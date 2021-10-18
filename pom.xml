@@ -16,7 +16,7 @@
         <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
-        <bouncycastle.version>1.59</bouncycastle.version>
+        <bouncycastle.version>1.67</bouncycastle.version>
         <lombok.version>1.18.12</lombok.version>
         <log4j.version>2.12.1</log4j.version>
     </properties>
