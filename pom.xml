@@ -19,7 +19,7 @@
         <bouncycastle.version>1.59</bouncycastle.version>
         <lombok.version>1.18.12</lombok.version>
         <log4j.version>2.12.1</log4j.version>
-        <jackson.version>2.12.3</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
     </properties>
 
     <dependencies>
