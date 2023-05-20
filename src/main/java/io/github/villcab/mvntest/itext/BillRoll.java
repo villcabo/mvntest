@@ -24,8 +24,6 @@ public class BillRoll {
                 "             Factura:163                  ",
                 "             CUF: 132962CB5F86B80D484AABFA",
                 "D6E414DC68E89537E77D8B0E377846D74         ",
-                "          ",
-                "                                          ",
                 "------------------------------------------",
                 "   Fecha      : 30/03/2022                ",
                 "   Hora       : 07:57:06                  ",
@@ -42,9 +40,7 @@ public class BillRoll {
                 "------------------------------------------",
                 "                 TOTAL:               2,00",
                 "SON: DOS 00/100 Bolivianos                ",
-                "                                          ",
                 "<QR>https://pilotosiat.impuestos.gob.bo/consulta/QR?nit=280048029&cuf=132962CB5F86B80D484AABFAD6E414DC68E89537E77D8B0E377846D74&numero=163&t=1",
-                "                                          ",
                 "Ley N.453:Tienes derecho a un trato equi- ",
                 "tativo sin discriminación en la oferta    ",
                 "de servicios.                             ",
@@ -52,7 +48,6 @@ public class BillRoll {
                 "Este documento es la Representación Grá-  ",
                 "fica de un Documento Fiscal emitido en    ",
                 "una modalidad de facturación en Línea.    ",
-                "                                          ",
                 "                                          ",
                 "¡Gracias por usar el Teleferico!|Que tenga",
                 " un buen viaje y feliz año nuevo!!!!      "
@@ -106,8 +101,11 @@ public class BillRoll {
 //        FontFactory.register("D:/Fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Regular.ttf");
 //        Font textFont = FontFactory.getFont("JetBrains Mono", BaseFont.IDENTITY_H, BaseFont.EMBEDDED, 8); //10 is the size
 
-        FontFactory.register("D:/Fonts/Menlo-Regular.ttf");
-        Font textFont = FontFactory.getFont("Menlo", BaseFont.IDENTITY_H, BaseFont.EMBEDDED, 8); //10 is the size
+//        FontFactory.register("D:/Fonts/Menlo-Regular.ttf");
+//        Font textFont = FontFactory.getFont("Menlo", BaseFont.IDENTITY_H, BaseFont.EMBEDDED, 8); //10 is the size
+
+        FontFactory.registerDirectory("D:/Fonts//dejavu-sans-mono");
+        Font textFont = FontFactory.getFont("DejaVu Sans Mono", BaseFont.IDENTITY_H, BaseFont.EMBEDDED, 8); //10 is the size
 
         Paragraph preface = new Paragraph();
         // We add one empty line
